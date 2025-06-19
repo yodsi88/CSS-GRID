@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade do Williams</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   body {
+     font-family: "Montserrat", sans-serif;
+     background-color: #F7F3E9;
+     display: grid;
+     grid-template-areas: 
+     "header header"
+     "menu menu"
+     "conteudo aside"
+     "rodape rodape";
+     grid-template-columns: 1fr 12.5rem;
+     grid-template-rows: auto auto 1fr auto;
+     gap: 3px;
+     min-height: 100vh;
+     background: url('Assets/Fundo2.jpg') no-repeat;
+     background-size: cover;
+     padding: 10px;
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+  header {
+    grid-area: header;
+    background-color: gray;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid black;
+  }
+  nav {
+    grid-area: menu;
+    background-color: gray;
+    padding: 20px;
+    font-weight:bold;
+    font-size: 1rem;
+    border: 1px solid black;
+  }
+  main {
+    grid-area: conteudo;
+    background-color: gray;
+    padding: 20px;
+    font-weight:bold;
+    font-size: 1rem;
+    border: 1px solid black;
+    min-height: 25rem;
+  }
+  aside {
+    grid-area: aside;
+    background-color: gray;
+    padding: 20px;
+    font-weight:bold;
+    font-size: 1rem;
+    border: 1px solid black;
+    min-height: 25rem;
+  }
+  footer {
+    grid-area: rodape;
+    background-color: gray;
+    padding: 20px;
+    font-weight:bold;
+    font-size: 1rem;
+    border: 1px solid black;
+  }
+  @media(max-width:580px) {
+    Aside {
+      display: none;
+    }
+    body {
+           display: grid;
+     grid-template-areas: 
+     "header header"
+     "menu menu"
+     "conteudo conteudo"
+     "rodape rodape";
+    }
+}
+  
+  </style>
+ </head>
+<body>
+  <header>
+        Cabeçalho
+  </header>
+  <nav>
+        Menu
+  </nav>
+  <main>
+        Conteúdo
+  </main>
+  <aside>
+        Aside
+  </aside>
+  <footer>
+        Rodapé
+  </footer>
+</body>
+</html>
